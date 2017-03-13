@@ -35,3 +35,11 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
+@app.route('/dianping')
+def dianping():
+    return render_template(
+        'dianping.html',
+        title='大众点评大数据分析',
+        message='大众点评大数据分析展示'
+    )
